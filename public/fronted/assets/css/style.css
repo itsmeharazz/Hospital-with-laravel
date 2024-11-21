@@ -1,0 +1,360 @@
+:root {
+     --topbar: #EBEBEB;
+     --navbar: #393838;
+     --primary-color: #1cdd07;
+     --secend-primary: #4a9ff3;
+
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+     background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+     background: linear-gradient(#1cdd07 10.15%, #4a9ff3 85.31%, #555);
+     border-radius: 0.5em;
+}
+
+/* Topbar */
+
+.topbar {
+     background-color: var(--topbar);
+}
+
+.topbar .top-right .phon {
+     margin-left: 1em;
+     font-weight: 400;
+     text-decoration: none;
+     color: #000;
+     transition: 0.3s;
+}
+
+.top-right .phon:hover {
+     color: var(--secend-primary);
+}
+
+/* navbar */
+.navbar {
+     background-color: var(--navbar);
+     padding: 0.5em 0;
+}
+
+.navbar .container .logo {
+     border: 1px solid var(--secend-primary);
+     border-radius: 50%;
+}
+
+.container .logo img {
+     width: 3.5em;
+     height: 3em;
+     padding: 0.3em;
+}
+
+.container #navbarSupportedContent ul li a {
+     font-weight: 400;
+     color: #fff;
+}
+
+#navbarSupportedContent ul li a:hover {
+     color: #ececec;
+}
+
+.dropdown .dropdown-menu {
+     background-color: var(--navbar);
+}
+
+.dropdown .dropdown-menu li a:hover {
+     background-color: #615f5f;
+     /* background-color: #F3CE4A; */
+     color: #000;
+
+}
+
+#navbarSupportedContent i {
+     margin-left: 0.9em;
+     color: #fff;
+     font-size: 1.2em;
+}
+
+/* model */
+#exampleModal .modal-content input {
+     width: 100%;
+     height: 3em;
+     margin-bottom: 1em;
+     padding: 0.5em;
+     border: 1px solid var(--topbar);
+     border-radius: 0.5em;
+     outline-color: var(--secend-primary);
+}
+
+.modal-content .login {
+     width: 55%;
+     height: 2.9em;
+     margin: 1em 6em 1.5em;
+     background-color: var(--secend-primary);
+     color: #000;
+     outline: none;
+     border: none;
+     border-radius: 1em;
+     transition: 0.3s;
+}
+
+.modal-content .login:hover {
+     background-color: transparent;
+     border: 1px solid var(--primary-color);
+
+}
+
+.modal-content .login:active {
+     box-shadow: 1px 1px 10px #d9d9d9;
+}
+
+.modal-content a {
+     display: block;
+     width: 100%;
+     text-align: center;
+     text-decoration: none;
+     color: #777;
+     transition: 0.5s;
+}
+
+.modal-content a:hover {
+     color: var(--primary-color);
+     text-decoration: underline;
+}
+
+/* end model */
+
+/* cover */
+.carousel-inner img {
+     width: 100%;
+     height: 80vh;
+     /* object-fit: cover; */
+}
+
+/* End cover */
+
+
+
+.all{
+width: 8em;
+height: 2.5em;
+margin: auto;
+background-color: #4a9ff3;
+font-weight:550;
+color: var(--topbar);
+
+}
+.all:hover{
+     border: 1px solid var(--primary-color);
+}
+/* clients */
+.clints{
+margin-bottom:3em;
+}
+.clint{
+     overflow: hidden;
+}
+.clint-row{
+     position: relative;
+     animation: slaid 5s infinite reverse;
+}
+.clints img{
+width: 8em;
+height: 5em;
+margin: 1em;
+}
+@keyframes slaid {
+     25% {
+         left: 0%;
+     }
+      
+     50% {
+         left: -10%;
+     }
+ 
+     100% {
+          left: 0%;
+     }
+ }
+/* Footer */
+.footer{
+     width: 100%;
+     background-color: var(--navbar);
+     color: #fff;
+}
+
+.footer img{
+width: 8em;
+height: 9em;
+aspect-ratio: 2/1;
+}
+.socail i{
+font-size: 1.5em;
+}
+.socail i:hover{
+color: #4a9ff3;
+}
+
+.footer h2{
+     padding: 0;
+     margin:0em;
+     text-align: left;
+}
+.footer a{
+     text-decoration: none;
+     color: #fff;
+
+}
+.footer a:hover{
+     color: #1cdd07;
+}
+.footer i{
+     margin-right: 0.5em;
+}
+.footer iframe{
+     margin-top: 2em;
+}
+/*Doc-dtails */
+.docdtails{
+     background-color:#f9f8f8;
+     color:var(--navbar);
+}
+.docdtails a{
+     text-decoration: none;
+     color: var(--navbar);
+}
+.docdtails a:hover{
+color: var(--secend-primary);
+}
+.appointment input{
+width: 10em;
+     padding: 0.5em;
+     border: 1px solid #d9d9d9;
+     border-radius: 0.5em;
+     background-color: #fcfbfb;
+     outline: none;
+
+}
+.appointment input:focus{
+     background-color: #f8f9f9;
+     border:1px solid var(--secend-primary);
+}
+.docdtails button,.appointment{
+     padding: 0.3em;
+     border-radius: 0.5em;
+     background-color: var(--secend-primary);
+     color: var(--topbar);
+     transition: all 0.5s ease-in-out;
+}
+.docdtails button,.appointment:hover{
+     background-color: #8dc2f7;
+     color: var(--navbar);
+}
+/* contacts us */
+
+.contact img{
+width: 4em;
+height: 4em;
+aspect-ratio: 2/1;
+}
+.contact a{
+     display: block;
+     text-decoration: none;
+     color: var(--navbar);
+     font-weight: bold;
+}
+.contact a:hover{
+     color: var(--secend-primary);
+}
+
+/* contact from */
+
+.contact-from input{
+     width: 100%;
+     height: 3em;
+     margin-bottom: 1em;
+     padding: 1em;
+     border: 1px solid #d9d9d9;
+     border-radius: 0.5em;
+     background-color: #fcfbfb;
+     outline: none;
+}
+.contact-from input:focus{
+     background-color: #f8f9f9;
+     border:1px solid var(--secend-primary);
+}
+.contact-from textarea{
+     width: 100%;
+     height: 10em;
+     margin-bottom: 1em;
+     padding: 1em;
+     border: 1px solid #d9d9d9;
+     border-radius: 0.5em;
+     background-color: #fcfbfb;
+     outline: none;
+}
+.contact-from textarea:focus{
+     background-color: #f8f9f9;
+     border:1px solid var(--secend-primary);
+}
+.contact-from button{
+     width: 7em;
+}
+/* about */
+.about img{
+     width: 15em;
+     height: 15em;
+     aspect-ratio: 2/1;
+}
+.about .us{
+     width:30em;
+}
+
+/* appointment */
+.appoin-dtails,.total{
+     min-width: 47%;
+     box-shadow: 2px 2px 20px #d9d9d9;
+     border-radius: 0.5em;
+}
+.appoin-dtails img{
+width: 6em;
+height: 5em;
+aspect-ratio: 2/1;
+}
+                         
+.appoin-dtails i{
+     font-size: 1.5em;
+     font-weight: bold;
+     margin-right: 1em;
+}
+.appoin-dtails i:hover{
+     color: rgb(244, 174, 174);
+}
+
+.deparment-card{
+     margin: 0.9em 0;
+     padding:0.8em;
+     border-radius: 0.6em;
+     box-shadow: 0 0 10px #e9eaea;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.deparment-card img{
+     width: 6em;
+     height: 6em;
+     aspect-ratio: 2/1;
+     margin-right: 1em;
+}
+
+.deparment-card:hover{
+     box-shadow: 1px 1px 20px #dcdbdb;
+}
